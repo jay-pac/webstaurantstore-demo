@@ -1,9 +1,7 @@
 # webstaurantstore-demo
 
 ## About The Project
-This project aims to automate a set of test cases for the Webstaurant Store website. The automation suite is built using Selenium WebDriver in Java and follows the Page Object Model (POM) design pattern for better maintainability and readability. The tests verify product search functionality, cart operations, and UI elements on the website.
-
-## Assumptions
+This project aims to automate test cases for the Webstaurant Store website. The automation suite is built using Selenium WebDriver in Java and follows the Page Object Model (POM) design pattern for better maintainability and readability. The tests verify product search functionality, cart operations, and UI elements on the website.
 
 ## Getting Started
 ### Prequistes
