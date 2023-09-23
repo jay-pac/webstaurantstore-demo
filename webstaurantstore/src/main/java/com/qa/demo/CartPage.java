@@ -33,4 +33,10 @@ public class CartPage {
         WebElement confirmEmptyCartElement = wait.until(ExpectedConditions.elementToBeClickable(confirmEmptyCartButton));
         confirmEmptyCartElement.click();
     }
+
+    public String getEmptyCartMessage() {
+        WebElement emptyCartMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".empty-cart__text .header-1")));
+        return emptyCartMessage.getText();
+    }
+    
 }

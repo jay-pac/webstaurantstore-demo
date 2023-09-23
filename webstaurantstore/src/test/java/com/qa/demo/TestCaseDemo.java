@@ -1,5 +1,7 @@
 package com.qa.demo;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 import java.time.Duration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -7,9 +9,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.util.List;
+import org.junit.jupiter.api.Test;
 
 public class TestCaseDemo {
-    public static void main(String[] args) {
+    @Test
+    public void testCaseDemo() {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
@@ -40,6 +44,10 @@ public class TestCaseDemo {
         cartPage.viewCart();
         cartPage.emptyCart();
         cartPage.confirmEmptyCart();
+
+        // Verify that the cart is empty
+        String actualMessage = cartPage.getEmptyCartMessage();
+        assertEquals("Your cart is empty.", actualMessage);
 
         driver.quit();
     }
