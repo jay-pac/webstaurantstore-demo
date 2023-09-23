@@ -19,7 +19,7 @@ All dependencies are managed by Maven and are defined in the pom.xml file.
 ### Setup
 * Clone this repository to your local machine.
 * Open a terminal and navigate to the root directory of the project.
-* Run `mvn clean` install to download the dependencies.
+* Run `mvn clean install` to download the dependencies.
 
 ## Running Tests
 * Open a terminal and navigate to the root directory of the project.
